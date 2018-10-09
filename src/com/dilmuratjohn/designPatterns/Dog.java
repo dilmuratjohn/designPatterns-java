@@ -1,14 +1,14 @@
 package com.dilmuratjohn.designPatterns;
 
-public class Dog extends Animal{
+class Dog extends Animal {
 
-    public void digHole(){
+    void digHole() {
 
         System.out.println("Dug a hole.");
 
     }
 
-    public Dog(){
+    Dog() {
 
         super();
 

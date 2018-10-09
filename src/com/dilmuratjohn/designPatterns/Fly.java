@@ -5,7 +5,7 @@ public interface Fly {
     String fly();
 }
 
-class CanFly implements Fly{
+class CanFly implements Fly {
 
     @Override
     public String fly() {
@@ -13,7 +13,7 @@ class CanFly implements Fly{
     }
 }
 
-class CanNotFlay implements Fly{
+class CanNotFlay implements Fly {
 
     @Override
     public String fly() {

@@ -1,6 +1,6 @@
 package com.dilmuratjohn.designPatterns;
 
-public class Giraffe extends Creature{
+public class Giraffe extends Creature {
 
     private String name;
 

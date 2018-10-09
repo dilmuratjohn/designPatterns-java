@@ -2,15 +2,23 @@ package com.dilmuratjohn.designPatterns;
 
 public interface Living {
 
-    public void setName(String name);
-    public void setSound(String sound);
-    public void setFavFood(String food);
-    public void setWeight(double weight);
-    public void setSpeed(double speed);
+    void setName(String name);
 
-    public String getName();
-    public String getSound();
-    public String getFavFood();
-    public double getWeight();
-    public double getSpeed();
+    void setSound(String sound);
+
+    void setFavFood(String food);
+
+    void setWeight(double weight);
+
+    void setSpeed(double speed);
+
+    String getName();
+
+    String getSound();
+
+    String getFavFood();
+
+    double getWeight();
+
+    double getSpeed();
 }

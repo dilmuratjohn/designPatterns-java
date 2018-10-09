@@ -2,7 +2,7 @@ package com.dilmuratjohn.designPatterns;
 
 public class GrabStocks {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         StockGrabber stockGrabber = new StockGrabber();
 
@@ -25,9 +25,9 @@ public class GrabStocks {
         stockGrabber.setGOOGPrice(676.40);
 
 
-        Runnable getIBM = new GetTheStock(stockGrabber, 2, "IBM", 197.00);
-        Runnable getAAPL = new GetTheStock(stockGrabber, 2, "AAPL", 677.60);
-        Runnable getGOOG = new GetTheStock(stockGrabber, 2, "GOOG", 676.40);
+        Runnable getIBM = new GetTheStock(stockGrabber, "IBM", 197.00);
+        Runnable getAAPL = new GetTheStock(stockGrabber, "AAPL", 677.60);
+        Runnable getGOOG = new GetTheStock(stockGrabber, "GOOG", 676.40);
 
         new Thread(getIBM).start();
         new Thread(getAAPL).start();

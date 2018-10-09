@@ -1,10 +1,8 @@
 package com.dilmuratjohn.designPatterns;
 
-public class WorkWithAnimals{
+public class WorkWithAnimals {
 
-    int justANum = 10;
-
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         Dog fido = new Dog();
 
@@ -19,7 +17,7 @@ public class WorkWithAnimals{
         System.out.println("Dog name after method call: " + fido.getName());
         System.out.println("Animal Sound: " + fido.getSound());
 
-        Animal doggy = new Dog();
+        Dog doggy = new Dog();
         Animal kitty = new Cat();
 
         System.out.println("Doggy says: " + doggy.getSound());
@@ -29,12 +27,12 @@ public class WorkWithAnimals{
         animals[0] = doggy;
         animals[1] = kitty;
 
-        System.out.println("Doggy says: " +animals[0].getSound());
-        System.out.println("Kitty says: " +animals[1].getSound() + "\n");
+        System.out.println("Doggy says: " + animals[0].getSound());
+        System.out.println("Kitty says: " + animals[1].getSound() + "\n");
 
         speakAnimal(doggy);
 
-        ((Dog) doggy).digHole();
+        doggy.digHole();
 
         Giraffe giraffe = new Giraffe();
         giraffe.setName("Frank");
@@ -42,15 +40,15 @@ public class WorkWithAnimals{
 
     }
 
-    public static void changeObjectName(Dog fido){
+    private static void changeObjectName(Dog fido) {
         fido.setName("Marcus");
     }
 
-    public static void speakAnimal(Animal randAnimal){
+    private static void speakAnimal(Animal randAnimal) {
         System.out.println("Animal says: " + randAnimal.getSound());
     }
 
-    public void sayHello(){
+    public void sayHello() {
         System.out.println("Hello");
     }
 

@@ -1,8 +1,8 @@
 package com.dilmuratjohn.designPatterns;
 
-public class Bird extends Animal {
+class Bird extends Animal {
 
-    public Bird(){
+    Bird() {
         super();
 
         setSound("Tweet");

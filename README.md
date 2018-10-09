@@ -4,3 +4,4 @@ from video [*Design Patterns Video Tutorial*](https://www.youtube.com/watch?v=vN
 > - Ep.1 Design Patterns Video Tutorial 1
 > - Ep.2 Design Patterns Video Tutorial 2
 > - Ep.3 Strategy Pattern
+> - Ep.4 Observer Pattern

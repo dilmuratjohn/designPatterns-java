@@ -1,6 +1,6 @@
 package com.dilmuratjohn.designPatterns;
 
-public class Cat extends Animal{
+public class Cat extends Animal {
 
 
     public Cat(){

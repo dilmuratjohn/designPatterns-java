@@ -1,16 +1,34 @@
 package com.dilmuratjohn.designPatterns;
 
-public abstract class EnemyShip {
+abstract class EnemyShip {
 
     private String name;
+    private double speed;
     private double amtDamage;
+    ESWeapon weapon;
+    ESEngine engine;
 
-    private String getName() {
+
+    abstract void makeShip();
+
+    public String toString() {
+        return name + " has a top speed of " + engine + " and an attack power of " + weapon;
+    }
+
+    String getName() {
         return name;
     }
 
-    public void setName(String name) {
+    void setName(String name) {
         this.name = name;
+    }
+
+    private double getSpeed() {
+        return speed;
+    }
+
+    void setSpeed(double speed) {
+        this.speed = speed;
     }
 
     private double getDamage() {
@@ -22,7 +40,7 @@ public abstract class EnemyShip {
     }
 
     void followHeroShip() {
-        System.out.println(getName() + " is following the hero.");
+        System.out.println(getName() + " is following the hero with the speed " + getSpeed() + "mph.");
     }
 
     void displayEnemyShip() {

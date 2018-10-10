@@ -1,12 +1,11 @@
 package com.dilmuratjohn.designPatterns;
 
-class UFOEnemyShip extends EnemyShip {
+class UFOBossEnemyShip extends EnemyShip {
 
     EnemyShipFactory shipFactory;
 
-    UFOEnemyShip(EnemyShipFactory shipFactory) {
+    UFOBossEnemyShip(EnemyShipFactory shipFactory) {
         this.shipFactory = shipFactory;
-
     }
 
     @Override

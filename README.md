@@ -6,3 +6,4 @@ from video [*Design Patterns Video Tutorial*](https://www.youtube.com/watch?v=vN
 > - Ep.3 Strategy Pattern
 > - Ep.4 Observer Pattern
 > - Ep.5 Factory Pattern
+> - Ep.6 Abstract Factory Pattern

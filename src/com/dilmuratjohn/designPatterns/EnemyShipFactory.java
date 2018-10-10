@@ -1,22 +1,9 @@
 package com.dilmuratjohn.designPatterns;
 
-class EnemyShipFactory {
+interface EnemyShipFactory {
 
-    EnemyShip makeEnemyShip(String shipType) {
+    ESWeapon addESGun();
 
-        EnemyShip ship = null;
-
-        switch (shipType) {
-            case "U":
-                return new UFOEnemyShip();
-            case "B":
-                return new BigUFOEnemyShip();
-            case "R":
-                return new RocketEnemyShip();
-            default:
-                return null;
-        }
-
-    }
+    ESEngine addESEngine();
 
 }
